@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
-import heroClassroom from "@/assets/hero-classroom.jpg";
+import heroClassroom from "@/assets/hero-classroom.jpeg";
 import { BookOpen, FlaskConical, Globe2, Palette, Code2, Music } from "lucide-react";
 
 export const Route = createFileRoute("/academics")({
@@ -18,19 +18,58 @@ export const Route = createFileRoute("/academics")({
 });
 
 const stages = [
-  { name: "Pre-Primary", grades: "Nursery – UKG", text: "Play-based learning with phonics, numeracy, motor skills, and storytelling." },
-  { name: "Primary", grades: "Grades 1 – 5", text: "Foundational literacy, conceptual maths, EVS, art, and second-language immersion." },
-  { name: "Middle School", grades: "Grades 6 – 8", text: "Inquiry-led STEM, social studies, coding, and elective discovery programs." },
-  { name: "Senior Secondary", grades: "Grades 9 – 12", text: "CBSE board prep, Science / Commerce / Humanities streams, career counselling." },
+  {
+    name: "Pre-Primary",
+    grades: "Nursery – UKG",
+    text: "Play-based learning focusing on phonics, early numeracy, motor skills, creativity, and storytelling activities."
+  },
+  {
+    name: "Primary",
+    grades: "Grades 1 – 5",
+    text: "Strong foundation in literacy, mathematics, environmental studies, arts, and second-language development."
+  },
+  {
+    name: "Middle School",
+    grades: "Grades 6 – 8",
+    text: "Inquiry-based STEM education, social sciences, coding fundamentals, and exposure to diverse co-curricular activities."
+  },
+  {
+    name: "Senior Secondary",
+    grades: "Grades 9 – 10",
+    text: "Focused CBSE curriculum with Science, Commerce, and Humanities streams along with career guidance and board exam preparation."
+  },
 ];
-
 const features = [
-  { icon: BookOpen, title: "CBSE Curriculum", text: "Aligned to the latest NEP framework with real-world application." },
-  { icon: FlaskConical, title: "STEM & Robotics", text: "Dedicated Atal Tinkering Lab, robotics studio, and innovation cells." },
-  { icon: Globe2, title: "Global Exposure", text: "Model UN, exchange programs, and partnerships with schools abroad." },
-  { icon: Palette, title: "Visual Arts", text: "Painting, sculpture, photography, and an annual student exhibition." },
-  { icon: Code2, title: "Computer Science", text: "Python, web development, and AI fundamentals from Grade 6 onwards." },
-  { icon: Music, title: "Performing Arts", text: "Classical and contemporary music, dance, and theatre productions." },
+  {
+    icon: BookOpen,
+    title: "CBSE Curriculum",
+    text: "Structured CBSE curriculum aligned with NEP 2020, focusing on conceptual learning and real-life application."
+  },
+  {
+    icon: FlaskConical,
+    title: "STEM & Robotics",
+    text: "Well-equipped Atal Tinkering Lab, robotics lab, and innovation spaces to encourage hands-on experimentation."
+  },
+  {
+    icon: Globe2,
+    title: "Global Exposure",
+    text: "Model United Nations, cultural exchange programs, and collaborations with international learning communities."
+  },
+  {
+    icon: Palette,
+    title: "Visual Arts",
+    text: "Creative programs in painting, sculpture, and photography with annual exhibitions showcasing student talent."
+  },
+  {
+    icon: Code2,
+    title: "Computer Science",
+    text: "Coding foundation from early grades including Python and introduction to AI concepts."
+  },
+  {
+    icon: Music,
+    title: "Performing Arts",
+    text: "Training in classical and modern music, dance, and theatre with regular stage performances and events."
+  },
 ];
 
 function AcademicsPage() {

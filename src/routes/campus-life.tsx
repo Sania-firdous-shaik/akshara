@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
-import campusLibrary from "@/assets/campus-library.jpg";
-import campusSports from "@/assets/campus-sports.jpg";
-import campusArts from "@/assets/campus-arts.jpg";
-import heroLab from "@/assets/hero-lab.jpg";
-import heroCampus from "@/assets/hero-campus.jpg";
-import heroClassroom from "@/assets/hero-classroom.jpg";
+import campusLibrary from "@/assets/campus-library.jpeg";
+import campusSports from "@/assets/campus-sports.jpeg";
+import campusArts from "@/assets/campus-arts.jpeg";
+import heroLab from "@/assets/hero-lab.jpeg";
+import heroCampus from "@/assets/hero-campus.jpeg";
+import heroClassroom from "@/assets/hero-classroom.jpeg";
 
 export const Route = createFileRoute("/campus-life")({
   head: () => ({
@@ -22,14 +22,37 @@ export const Route = createFileRoute("/campus-life")({
 });
 
 const gallery = [
-  { img: campusSports, title: "Sports & Athletics", text: "Two acres of playgrounds, a 200m track, indoor courts, and inter-school championships." },
-  { img: campusLibrary, title: "Libraries & Reading", text: "Over 18,000 titles across two libraries, a digital archive, and weekly reading circles." },
-  { img: campusArts, title: "Arts & Culture", text: "Annual fests, classical performances, choir, and student-run art exhibitions." },
-  { img: heroLab, title: "Science & Innovation", text: "Modern physics, chemistry, biology and robotics labs designed for hands-on discovery." },
-  { img: heroClassroom, title: "Vibrant Classrooms", text: "Smart boards, breakout zones, and small class sizes for personalised attention." },
-  { img: heroCampus, title: "Green Campus", text: "Tree-lined avenues, butterfly garden, and an organic kitchen patch tended by students." },
+  {
+    img: campusSports,
+    title: "Sports & Athletics",
+    text: "Expansive playgrounds, a 200m athletics track, and well-equipped indoor courts supporting inter-school and state-level competitions."
+  },
+  {
+    img: campusLibrary,
+    title: "Libraries & Reading",
+    text: "A rich collection of over 2000 books, digital learning resources, and structured reading programs to build strong literacy habits."
+  },
+  {
+    img: campusArts,
+    title: "Arts & Culture",
+    text: "A vibrant platform for music, dance, theatre, and visual arts with annual cultural festivals and student-led exhibitions."
+  },
+  {
+    img: heroLab,
+    title: "Science & Innovation",
+    text: "Fully equipped laboratories for Physics, Chemistry, Biology, and Robotics encouraging hands-on experimental learning."
+  },
+  {
+    img: heroClassroom,
+    title: "Modern Classrooms",
+    text: "Smart classrooms with digital boards, collaborative learning spaces, and low student-teacher ratio for personalised attention."
+  },
+  {
+    img: heroCampus,
+    title: "Eco-Friendly Campus",
+    text: "A lush, eco-friendly campus with tree-lined pathways, a garden, and sustainable green spaces that promote environmental awareness among students."
+  },
 ];
-
 function CampusPage() {
   return (
     <Layout>

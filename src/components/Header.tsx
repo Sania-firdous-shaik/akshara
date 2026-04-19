@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/akshara-logo.png";
+import logo from "@/assets/akshara-logo.jpeg";
 
 const links = [
   { to: "/", label: "Home" },
@@ -19,7 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="hidden md:flex bg-primary text-primary-foreground text-xs">
         <div className="container mx-auto px-6 py-2 flex items-center justify-between">
-          <span className="flex items-center gap-2"><Phone className="h-3 w-3" /> +91 98765 43210 · admissions@aksharaschool.in</span>
+          <span className="flex items-center gap-2"><Phone className="h-3 w-3" /> +91 9121327392 · aksharaschools2018@gmail.com</span>
           <span className="text-gold">Admissions Open for 2026–2027</span>
         </div>
       </div>

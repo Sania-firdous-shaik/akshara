@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
-import heroCampus from "@/assets/hero-campus.jpg";
+import heroCampus from "@/assets/hero-campus1.jpeg";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -22,7 +22,7 @@ function ContactPage() {
 
   return (
     <Layout>
-      <PageHero eyebrow="Contact" title="We'd love to hear from you." subtitle="Reach out for admissions, partnerships, or simply to say hello." image={heroCampus} />
+      <PageHero eyebrow="Contact" title="We'd love to hear from you." subtitle="Reach out for admissions." image={heroCampus} />
 
       <section className="py-20">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12">
@@ -35,10 +35,10 @@ function ContactPage() {
 
             <div className="mt-8 space-y-5">
               {[
-                { icon: MapPin, label: "Address", text: "Plot 24, Education Lane, Hyderabad, Telangana 500032" },
-                { icon: Phone, label: "Phone", text: "+91 98765 43210 · +91 98765 43211" },
-                { icon: Mail, label: "Email", text: "admissions@aksharaschool.in" },
-                { icon: Clock, label: "Office Hours", text: "Mon – Sat · 8:30 AM – 4:30 PM" },
+                { icon: MapPin, label: "Address", text: "Door No 2B, Near Athidhi International Hotel, Gubbala Vari Street, RR Peta, Eluru-534002, Andhra Pradesh" },
+                { icon: Phone, label: "Phone", text: "+91 9121327392" },
+                { icon: Mail, label: "Email", text: "aksharaschools2018@gmail.com" },
+                { icon: Clock, label: "Office Hours", text: "Mon – Sat · 8:30 AM – 5:30 PM" },
               ].map((c) => (
                 <div key={c.label} className="flex gap-4 items-start">
                   <div className="h-11 w-11 rounded-xl bg-gradient-hero text-primary-foreground grid place-items-center shrink-0">

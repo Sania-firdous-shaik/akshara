@@ -2,14 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, GraduationCap, Heart, Trophy, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
-import heroStudents from "@/assets/hero-students.jpg";
-import heroCampus from "@/assets/hero-campus.jpg";
-import heroClassroom from "@/assets/hero-classroom.jpg";
-import heroLab from "@/assets/hero-lab.jpg";
-import campusSports from "@/assets/campus-sports.jpg";
-import campusLibrary from "@/assets/campus-library.jpg";
-import campusArts from "@/assets/campus-arts.jpg";
-
+import heroStudents from "@/assets/hero-students.jpeg";
+import heroCampus from "@/assets/hero-campus.jpeg";
+import heroClassroom from "@/assets/hero-classroom.jpeg";
+import heroLab from "@/assets/hero-lab.jpeg";
+import campusSports from "@/assets/campus-sports.jpeg";
+import campusLibrary from "@/assets/campus-library.jpeg";
+import campusArts from "@/assets/campus-arts.jpeg";
+import heroNew from "@/assets/hero-new.jpeg";
+import heroNew1 from "@/assets/hero-new1.jpeg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/")({
 const slides = [
   {
     image: heroStudents,
-    eyebrow: "Since 1998",
+    eyebrow: "Since 2018",
     title: "Where Young Minds Find Their Voice.",
     text: "For over two decades, Akshara has nurtured curious learners into confident, compassionate citizens of the world.",
     cta: { label: "Discover Our Story", to: "/about" as const },
@@ -48,9 +49,24 @@ const slides = [
     image: heroLab,
     eyebrow: "Beyond the Classroom",
     title: "Learning That Goes Beyond Books.",
-    text: "STEM labs, arts, sports, and life-skills — every Bhashyamite grows in every dimension.",
+    text: "STEM labs, arts, sports, and life-skills — every Aksharite grows in every dimension.",
     cta: { label: "Apply Now", to: "/admissions" as const },
+
   },
+  {
+  image: heroNew1,
+  eyebrow: "Excellence in Action",
+  title: "Celebrating Student Achievements.",
+  text: "Our students consistently shine in academics, sports, and co-curricular competitions at every level.",
+  cta: { label: "View Achievements", to: "/academics" as const },
+},
+{
+  image: heroNew,
+  eyebrow: "Pride of Akshara",
+  title: "A Culture of Success and Growth.",
+  text: "From classrooms to national platforms, our learners continue to bring laurels to the school.",
+  cta: { label: "Our Results", to: "/academics" as const },
+},
 ];
 
 function HomePage() {
@@ -172,7 +188,7 @@ function AboutBlock() {
         <div className="relative">
           <img src={heroCampus} alt="Akshara campus" className="rounded-3xl shadow-elegant w-full" loading="lazy" />
           <div className="absolute -bottom-6 -right-6 bg-gradient-gold text-gold-foreground rounded-2xl p-6 shadow-gold hidden md:block">
-            <div className="font-display text-4xl font-bold leading-none">25+</div>
+            <div className="font-display text-4xl font-bold leading-none">8+</div>
             <div className="text-xs uppercase tracking-wider mt-1">Years of Legacy</div>
           </div>
         </div>
@@ -182,7 +198,7 @@ function AboutBlock() {
             A modest dream that grew into a movement.
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            What began in 1998 as a small classroom of fifteen children has today blossomed into one
+            What began in 2018as a small classroom of fifteen children has today blossomed into one
             of the region's most respected CBSE institutions. At Akshara — meaning "the imperishable" —
             we believe education is the one gift that endures forever.
           </p>
@@ -236,9 +252,9 @@ function CampusGrid() {
 
 function StatsBand() {
   const stats = [
-    { v: "25+", l: "Years of Excellence" },
-    { v: "3,500+", l: "Happy Students" },
-    { v: "180+", l: "Expert Faculty" },
+    { v: "8+", l: "Years of Excellence" },
+    { v: "1000+", l: "Happy Students" },
+    { v: "70+", l: "Expert Faculty" },
     { v: "98%", l: "Board Pass Rate" },
   ];
   return (
